@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SQAA</string>
+    <string name="name">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="title_activity_main2"></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="GPSAlertDialogTitle">GPS Title</string>
+    <string name="GPSAlertDialogMessage">GPS Dialog</string>
+    <string name="cancel">Cancel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Institution_list">Institution List</string>
+</resources>

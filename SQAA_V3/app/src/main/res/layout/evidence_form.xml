@@ -1,0 +1,531 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sqaa.com.cmrcet.sqaa.EvidenceForm"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/evidenceformHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/InstitutionName"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginLeft="50dp"
+            android:text="New Evidence Form"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="#d8d8d8">
+        <TextView
+            android:id="@+id/lofHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Lof unique no"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+            <EditText
+                android:id="@+id/lofValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-117dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="3dp"
+                android:padding="5dp"
+                android:hint=" Enter Lof unique no "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                android:background="@drawable/backevd"/>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:background="#d8d8d8"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/Gradeheader"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:text="Institute name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/Gradeclassvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="-327dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:hint=" Enter Institute name "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:background="@drawable/backevd"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:background="#d8d8d8"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/GradeSectionheader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Class Level"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/GradeSectionValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="-100dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:hint=" Enter class level "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:background="@drawable/backevd"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#d8d8d8">
+                <TextView
+                    android:id="@+id/subjectheader"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:text="Subject"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/subjectvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-70dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="3dp"
+                    android:padding="5dp"
+                    android:hint=" Enter Subject "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:background="@drawable/backevd"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#d8d8d8"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/TeacherHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Teacher name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/TeacherValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-100dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/backevd"
+                    android:hint=" Enter Teacher Name "
+                    android:padding="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:background="#d8d8d8"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/Topicheader"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:text="Teacher designation"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/Topicvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="-300dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:hint=" Enter Teacher designation "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:background="@drawable/backevd"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:background="#d8d8d8"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/Noofstudentsheader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Total no of Students"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/NoofstudentsValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="-167dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:hint=" Enter Total No of students "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:background="@drawable/backevd"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#d8d8d8">
+                <TextView
+                    android:id="@+id/dooheader"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:text="Date of Objservation"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/doovalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-330dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="3dp"
+                    android:padding="5dp"
+                    android:hint=" Enter Date of Observation "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:background="@drawable/backevd"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:background="#d8d8d8"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/ps1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:text="PS1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/ps1val"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    android:layout_marginLeft="-325dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="40dp"
+                    android:padding="5dp"
+                    android:hint=" Enter PS1 Observation "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:background="@drawable/backevd"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/Ibtn1ps1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-320dp"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/backevd"
+                    android:text="Capture Image"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/Ibtn2ps1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/backevd"
+                    android:text="Capture Video"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:background="#d8d8d8"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/ps2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:text="PS2"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/ps2val"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    android:layout_marginLeft="-325dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="40dp"
+                    android:padding="5dp"
+                    android:hint=" Enter PS2 Observation "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:background="@drawable/backevd"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/Ibtn1ps2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-320dp"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/backevd"
+                    android:text="Capture Image"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/Ibtn2ps2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/backevd"
+                    android:text="Capture Video"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:background="#d8d8d8"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/ps3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:text="PS3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/ps2va1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    android:layout_marginLeft="-325dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="40dp"
+                    android:padding="5dp"
+                    android:hint=" Enter PS3 Observation "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:background="@drawable/backevd"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/Ibtn1ps3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-320dp"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/backevd"
+                    android:text="Capture Image"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/Ibtn2ps3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/backevd"
+                    android:text="Capture Video"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:background="#d8d8d8"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/ps4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:text="PS4"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/ps4val"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    android:layout_marginLeft="-325dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="40dp"
+                    android:padding="5dp"
+                    android:hint=" Enter PS4 Observation "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:background="@drawable/backevd"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/Ibtn1ps4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-320dp"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/backevd"
+                    android:text="Capture Image"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/Ibtn2ps4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/backevd"
+                    android:text="Capture Video"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:background="#d8d8d8"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/ps5"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:text="PS5"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/ps5val"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    android:layout_marginLeft="-325dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="40dp"
+                    android:padding="5dp"
+                    android:hint=" Enter PS5 Observation "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    android:background="@drawable/backevd"
+                    android:ems="10"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/Ibtn1ps5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-320dp"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/backevd"
+                    android:text="Capture Image"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/Ibtn2ps5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="200dp"
+                    android:background="@drawable/backevd"
+                    android:text="Capture Video"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Submit"
+                android:id="@+id/btnsubmitevid"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="100dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>

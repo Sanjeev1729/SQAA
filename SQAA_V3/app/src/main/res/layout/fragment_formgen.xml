@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag_formgen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sqaa.com.cmrcet.sqaa.formgen">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please click bellow buttons to generate respective forms"
+        android:textColor="@color/Red"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/idlessonobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Lesson Observation Form" />
+
+    <Button
+        android:id="@+id/idevidence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="120dp"
+        android:text="Evidence Forms" />
+
+
+</RelativeLayout>
